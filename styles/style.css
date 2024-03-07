@@ -13,7 +13,7 @@
     display: flex;
     justify-content: space-between;
     width: 1170px;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .nav-title {
@@ -37,7 +37,7 @@
     color: #FF5400;
 }
 
-.nav-menubar{
+.nav-menubar {
     display: flex;
     list-style: none;
     gap: 2.8rem;
@@ -52,29 +52,117 @@
     font-weight: 700;
 }
 
-.nav-menubar .home-menu a{
+.nav-menubar .home-menu a {
     color: #FF5400;
 }
 
+
+/* header style */
+
+.header-container {
+    background-image: url('/Images/Group\ 13\ \(1\)\ \(1\).png'), linear-gradient(180deg, rgba(24, 24, 27, 0.8) 0%, rgba(19, 19, 24, 0.00) 100%);
+    width: 1170px;
+    height: 500px;
+    background-size: cover;
+    margin: 0 auto;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.header-container h1 {
+    color: #FFF;
+    font-size: 4rem;
+    font-weight: 800;
+    padding-top: 6.5rem;
+    margin-bottom: 0;
+}
+
+.header-container p {
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.input-form {
+    display: inline-flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 24px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+
+}
+
+.input-form input[type=text],
+input[type=list],
+input[type=button] {
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 16px 0 16px 16px;
+    width: 174px;
+
+
+
+}
+
+.input-form input[type=button] {
+    background: #FF5400;
+    color: #FFF;
+    text-align: center;
+    font-weight: 700;
+}
+
 @media screen and (max-width: 600px) {
-    .nav-container{
-        flex-direction: column;
-        width: 100%;
-        
+
+    .nav-container, .header-container{
+          width: 100%;
     }
 
-    .nav-title{
+    .nav-container, .input-form {
+        flex-direction: column;
+    }
+
+    .nav-title {
         margin: auto;
     }
 
-    .nav-menubar{
+    .nav-menubar {
         gap: 1rem;
     }
+
+    .header-container h1{
+        padding: 1rem;
+        font-size: 1.5rem ;
+    }
+
+    .header-container p{
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+    
 }
 
 @media screen and (min-width: 600px) and (max-width: 992px) {
-    .nav-container{
-        width: 100%;    
+    .nav-container, .header-container {
+        width: 100%;
     }
-    
+
+    .input-form {
+        flex-direction: column;
+    }
+
+    .header-container h1{
+        padding: 2rem;
+        font-size: 2rem ;
+    }
+
+    .header-container p{
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+    }
+
 }
