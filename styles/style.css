@@ -7,6 +7,18 @@
 
 }
 
+.btn-primary {
+    border: none;
+    border-radius: 8px;
+    background: #FF5400;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 800;
+    padding: 14px 34px;
+
+
+}
+
 /* navbar style */
 
 .nav-container {
@@ -116,51 +128,216 @@ input[type=button] {
     font-weight: 700;
 }
 
+/* popular section style */
+
+.popular-container {
+    display: flex;
+    width: 1170px;
+    gap: 3.2rem;
+    margin: 100px auto;
+}
+
+.popular-describe .popular-title {
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+
+
+}
+
+.popular-describe {
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 1.5rem;
+}
+
+.popular-describe ul {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.popular-img {
+    border-radius: 1rem;
+    width: 540px;
+    height: 550px;
+}
+
+/* destination section style */
+
+.destination-title {
+    text-align: center;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+}
+
+.destination-title h1 {
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0px;
+
+}
+
+.destination-title p {
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.destination-place {
+    position: relative;
+    /* width: 100%; */
+    /* border: 2px solid red; */
+}
+
+.destination-img {
+    width: 100%;
+    height: 100%;
+}
+
+.destination-place h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 800;
+
+}
+
+.destination-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    /* margin: auto; */
+    /* width: 1170px; */
+    border: 2px solid red;
+}
+
+/* choose section style */
+
+.choose-title {
+    text-align: center;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+}
+
+.choose-title h1 {
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 0px;
+}
+
+.choose-title p {
+    color: rgba(19, 19, 24, 0.70);
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.choose-box {
+    width: 573px;
+    height: 284px;
+    border-radius: 16px;
+    padding: 32px;
+}
+
+.choose-hotel {
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+.choose-service {
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+
+}
+
+.choose-price {
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+}
+
+.icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 32px;
+}
+
+.choose-layout{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.4rem;
+}
+
 @media screen and (max-width: 600px) {
 
-    .nav-container, .header-container{
-          width: 100%;
+    .nav-container,
+    .header-container,
+    .popular-container,
+    .popular-img {
+        width: 100%;
+        margin: auto;
+
     }
 
-    .nav-container, .input-form {
+    .nav-container,
+    .nav-menubar,
+    .input-form,
+    .popular-container {
         flex-direction: column;
     }
 
     .nav-title {
-        margin: auto;
+        margin: 0 auto;
     }
 
     .nav-menubar {
         gap: 1rem;
     }
 
-    .header-container h1{
+    .header-container h1 {
         padding: 1rem;
-        font-size: 1.5rem ;
+        font-size: 1.5rem;
     }
 
-    .header-container p{
+    .header-container p {
         margin-top: 0;
         margin-bottom: 2rem;
     }
-    
+
+
 }
 
+
+
 @media screen and (min-width: 600px) and (max-width: 992px) {
-    .nav-container, .header-container {
-        width: 100%;
+
+    .nav-container,
+    .header-container,
+    .popular-img {
+        width: calc(100% - 20px);
+        margin: auto;
     }
 
-    .input-form {
+    .input-form,
+    .popular-container {
         flex-direction: column;
     }
 
-    .header-container h1{
+    .header-container h1 {
         padding: 2rem;
-        font-size: 2rem ;
+        font-size: 2rem;
     }
 
-    .header-container p{
+    .header-container p {
         margin-top: 0;
         margin-bottom: 1.5rem;
     }
