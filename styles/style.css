@@ -214,9 +214,6 @@ input[type=button] {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1.5rem;
-    /* margin: auto; */
-    /* width: 1170px; */
-    border: 2px solid red;
 }
 
 /* choose section style */
