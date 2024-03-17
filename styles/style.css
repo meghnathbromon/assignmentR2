@@ -45,7 +45,7 @@
     font-weight: 800;
 }
 
-.nav-travel-text {
+.nav-start-text {
     color: #FF5400;
 }
 
@@ -270,11 +270,195 @@ input[type=button] {
     margin-bottom: 32px;
 }
 
-.choose-layout{
+.choose-layout {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1.4rem;
+}
+
+/* newsletter section style */
+
+.newsletter-section {
+    width: 474px;
+    height: 422px;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    padding: 40px;
+
+}
+
+.newsletter-section h1 {
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 16px;
+
+}
+
+.newsletter-section p {
+    color: #5A5A5D;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 24px;
+    margin-top: 0;
+    width: 350px;
+}
+
+hr {
+    background: rgba(19, 19, 24, 0.10);
+    margin-bottom: 24px;
+}
+
+.newsletter-section input[type=text],
+[type=email] {
+    width: 393px;
+    color: rgba(19, 19, 24, 0.30);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 16px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    margin-bottom: 16px;
+
+}
+
+.newsletter-section input[type=submit] {
+    width: 393px;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 8px;
+    background: #FF5400;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border: none;
+    margin-top: 40px;
+
+}
+
+.travel-section{
+    width: 672px;
+    height: 422px;
+
+}
+
+.travel-img {
+    position: absolute;
+    width: 100%;
+
+}
+
+travel-imgR{
+    width: 100%;
+}
+
+
+.travel-info {
+    color: #FFF;
+    text-align: center;
+    width: 324px;
+    height: 120px;
+    transform: rotate(-19.628deg);
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: #FF5400;
+    padding-top: 5px;
+    position: relative;
+    top: 250px;
+    left: 340px;
+}
+
+.travel-info p {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.travel-info h4 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-top: 0;
+}
+
+.newsletter-travel-section {
+    display: flex;
+    gap: 24px;
+    width: 1170px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+/* footer style  */
+
+.footer-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 6.5rem;
+    margin-bottom: 0px;
+
+
+}
+
+.footer-title img {
+    width: 40px;
+    height: 46px;
+}
+
+.footer-title h1 {
+    color: var(--Dark-01, #131318);
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.footer-start-text {
+    color: #FF5400;
+}
+
+.footer-img {
+    height: 24px;
+    width: 24px;
+    margin-left: 30px;
+}
+
+.footer {
+    background: rgba(19, 19, 24, 0.05);
+    margin-top: 6.5rem;
+}
+
+.footer-text {
+    color: #5A5A5D;
+    text-align: center;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+
+.footer-all-icon {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+hr {
+    width: 50%;
+    height: 1px;
+    background: rgba(19, 19, 24, 0.10);
+    margin-bottom: 50px;
+}
+
+.footer-copyright {
+    color: #131318;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 7rem;
+
 }
 
 @media screen and (max-width: 600px) {
@@ -291,7 +475,8 @@ input[type=button] {
     .nav-container,
     .nav-menubar,
     .input-form,
-    .popular-container {
+    .popular-container,
+    .newsletter-travel-section {
         flex-direction: column;
     }
 
@@ -312,6 +497,60 @@ input[type=button] {
         margin-top: 0;
         margin-bottom: 2rem;
     }
+
+    .newsletter-travel-section{
+        width: 90%;
+    }
+
+    .travel-imgR{
+        width: 90%;
+    }
+
+    .travel-info {
+        width: 30%;
+        transform: rotate(-19.628deg);
+        top: 70px;
+        left: 70px;
+    }
+    .travel-img {
+        position: absolute;
+        width: 100%;
+    
+    }
+
+    .travel-info p {
+        font-size: 15px;
+    }
+    
+    .travel-info h4 {
+        font-size: 20px;
+    }
+
+    .newsletter-section {
+        width: 100%;
+        padding: 5px;
+    
+
+    }
+
+    .newsletter-section input[type=text],
+    [type=email] {
+        width: 50%;
+
+    }
+
+    .newsletter-section input[type=submit] {
+        width: 50%;
+
+    }
+
+
+    .footer {
+        /* background: rgba(19, 19, 24, 0.05); */
+        /* margin-top: 20rem; */
+    }
+
+
 
 
 }
